@@ -5,6 +5,12 @@
 *.pth
 *.onnx
 
+# Allow model weights to be tracked so collaborators can resume training
+!models/**/weights/
+!models/**/weights/**
+!models/**/weights/*.pt
+!models/**/weights/*.pth
+
 # ===== MODEL TRAINING & RESULTS =====
 /results/
 
