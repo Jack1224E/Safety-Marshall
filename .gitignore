@@ -6,7 +6,6 @@
 *.onnx
 
 # ===== MODEL TRAINING & RESULTS =====
-/models/runs/
 /results/
 
 # ===== PYTHON & ENVIRONMENT =====
