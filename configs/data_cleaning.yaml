@@ -1,0 +1,23 @@
+# 1. The Clean Schema (What we want)
+target_classes: ['Hardhat', 'Vest', 'Person']
+
+# 2. The Sources (Both datasets)
+sources:
+  # --- DATASET 1 (The 14-Class Monster) ---
+  dataset_1:
+    path: "raw_datasets/dataset1"
+    mapping:
+      3: "Hardhat"
+      13: "Vest"
+      11: "Person"
+
+  # --- DATASET 2 (The New One) ---
+  dataset_2:
+    # Matches your screenshot folder name exactly
+    path: "raw_datasets/dataset2" 
+    
+    mapping:
+      0: "Hardhat"   # Their 'helmet' -> Our Hardhat
+      1: "Vest"      # Their 'vest' -> Our Vest
+      3: "Person"    # Their 'person' -> Our Person
+      # ID 2 ('head') is missing here, so it gets deleted automatically.

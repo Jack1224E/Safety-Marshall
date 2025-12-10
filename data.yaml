@@ -1,0 +1,10 @@
+# 1. Path to the dataset root (Relative to the SafetyMarshal folder)
+path: ./datasets/combined_ppe
+
+# 2. Folder names inside that path (The script created 'train' and 'val')
+train: images/train
+val: images/val
+
+# 3. Class Definitions
+nc: 3
+names: ['Hardhat', 'Vest', 'Person']
